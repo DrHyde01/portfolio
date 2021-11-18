@@ -1,0 +1,11 @@
+// Disable styles for links or lists 
+@mixin styles-disable {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+  }
+
+// Lighting and darking elements 
+@mixin darker-hover($colour) {
+  background-color: darken($colour, 8%);
+}

@@ -1,0 +1,19 @@
+.contactbtn {
+    height: 55%;
+    padding: $padding-base;
+    display: flex;
+    align-items: center;
+    background-color: $mint-green;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+
+    &__text {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    &:hover {
+        @include darker-hover($mint-green);
+        color: $white;
+    }
+}
