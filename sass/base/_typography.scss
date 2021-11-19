@@ -1,11 +1,34 @@
 body {
-    font-family: "Prompt", arial, sans-serif;
-    font-size: 1em;
-  }
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1em;
+}
 
-  a {
-    @include styles-disable;
-    font-weight:300;
-  }
+a {
+  @include styles-disable;
+  font-weight: 300;
+}
 
-  
+p {
+  font-weight: 300;
+  color: $white;
+}
+
+.aboutitle__title {
+  font-size: 2em;
+  font-weight: 400;
+  color: $white;
+}
+
+.aboutitle__name {
+  font-size: 1.8em;
+}
+
+.aboutitle__randomword {
+  color: $mint-green;
+}
+
+.about__subtitle {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: $white;
+}
