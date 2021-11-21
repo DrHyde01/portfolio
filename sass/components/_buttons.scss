@@ -10,6 +10,10 @@
     &__text {
         text-align: center;
         font-weight: 500;
+
+        @include mobile-only {
+            display: none; // replacing with contact icon ?
+        }
     }
 
     &:hover {

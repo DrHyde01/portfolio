@@ -1,5 +1,6 @@
 .aboutitle {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: auto;
@@ -8,6 +9,13 @@
   &__textcontain {
     width: 60%;
     margin-left: 4rem;
+
+    @include mobile-only {
+      width: 100%;
+      margin-left: 0;
+      padding: $padding-lg;
+      text-align: start;
+    }
   }
 
   &__img {

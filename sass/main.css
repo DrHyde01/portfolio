@@ -33,6 +33,12 @@ p {
   font-weight: 400;
   color: #FFFF;
 }
+@media screen and (max-width: 749px) {
+  .aboutitle__title {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+}
 
 .aboutitle__name {
   font-size: 1.8em;
@@ -86,6 +92,7 @@ p {
 
 .aboutitle {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: auto;
@@ -94,6 +101,14 @@ p {
 .aboutitle__textcontain {
   width: 60%;
   margin-left: 4rem;
+}
+@media screen and (max-width: 749px) {
+  .aboutitle__textcontain {
+    width: 100%;
+    margin-left: 0;
+    padding: 30px;
+    text-align: start;
+  }
 }
 .aboutitle__img {
   height: 350px;
