@@ -23,16 +23,22 @@
     list-style: none;
 
     @include mobile-only {
+      // Hamburger menu appears !
       position: fixed;
-      left: -100%;
-      top: 5rem;
+      right: 0;
+      top: 4rem;
+      display: flex;
       flex-direction: column;
-      background-color: #fff;
+      background-color: $darker-grey;
       width: 100%;
-      border-radius: 10px;
       text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+
+      &.active {
+        opacity: 1;
+      }
     }
 
     &__link {
@@ -46,7 +52,12 @@
       transition: 0.5s ease-in-out;
 
       @include mobile-only {
-        margin: 2.5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: $padding-base;
+        padding-bottom: $padding-base;
+        color: white;
       }
 
       &::after {
@@ -60,6 +71,11 @@
         bottom: 0;
         opacity: 0;
         transition: 0.5s ease-in-out;
+
+        @include mobile-only {
+          // No underline in hamburger menu
+          display: none;
+        }
       }
 
       &:hover {
@@ -71,6 +87,18 @@
         }
       }
     }
+
+    &__contact {
+      display: none;
+
+      @include mobile-only {
+        display: block;
+        padding-top: $padding-base;
+        padding-bottom: $padding-base;
+        color: $darker-grey;
+        background-color: $mint-green;
+      }
+    }
   }
 
   &__hamburger {
@@ -78,17 +106,30 @@
     display: none;
 
     @include mobile-only {
+      // Displayed only in mobile version
       display: block;
       cursor: pointer;
-    }
 
-    &__bar {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
+      &__bar {
+        display: block;
+        width: 25px;
+        height: 2px;
+        margin: 8px auto;
+        background-color: $white;
+        transition: all 0.5s ease-in-out;
+      }
 
-      background-color: $white;
+      &.active { // Transform bars to a cross if menu is open
+        :nth-child(2) {
+          opacity: 0;
+        }
+        :nth-child(1) {
+          transform: translateY(10px) rotate(45deg);
+        }
+        :nth-child(3) {
+          transform: translateY(-10px) rotate(-45deg);
+        }
+      }
     }
   }
 }

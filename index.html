@@ -34,20 +34,23 @@
     <nav class="navbar">
       <img src="images/logo_v1.png" alt="logo SH" class="navbar__logo" />
 
+       <!-- Responsive menu -->
+       <div class="navbar__hamburger" aria-label=”Afficher le menu” aria-hidden=”true”>
+        <span class="navbar__hamburger__bar"></span>
+        <span class="navbar__hamburger__bar"></span>
+        <span class="navbar__hamburger__bar"></span>
+      </div>
+
       <ul class="navbar__menu">
         <li>
           <a href="#about" class="navbar__menu__link">A propos</a>
           <a href="#" class="navbar__menu__link">Services</a>
           <a href="#" class="navbar__menu__link">Projets</a>
+          <a href="#" class="navbar__menu__contact"> Contactez moi</a>
         </li>
       </ul>
 
-      <!-- Responsive menu -->
-      <div class="navbar__hamburger">
-        <span class="navbar__hamburger__bar"></span>
-        <span class="navbar__hamburger__bar"></span>
-        <span class="navbar__hamburger__bar"></span>
-      </div>
+     
 
       <a href="#" class="contactbtn">
         <span class="contactbtn__text">Contactez moi</span>
@@ -100,5 +103,7 @@
         <span class="infobtn__text">Plus d'infos</span>
       </a>
     </section>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

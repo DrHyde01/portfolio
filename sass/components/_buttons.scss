@@ -1,43 +1,43 @@
 .contactbtn {
-    height: 55%; 
-    display: flex;
-    align-items: center;
-    padding: $padding-base;
-    background-color: $mint-green;
-    border-radius: 5px;
-    transition: 0.5s ease-in-out;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  padding: $padding-base;
+  background-color: $mint-green;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
 
-    &__text {
-        text-align: center;
-        font-weight: 500;
+  @include mobile-only {
+    display: none;
+  }
 
-        @include mobile-only {
-            display: none; // replacing with contact icon ?
-        }
-    }
+  &__text {
+    text-align: center;
+    font-weight: 500;
+  }
 
-    &:hover {
-        @include darker-hover($mint-green);
-        color: $white;
-    }
+  &:hover {
+    @include darker-hover($mint-green);
+    color: $white;
+  }
 }
 
 .infobtn {
-    height: 55%;
-    display: flex;
-    align-items: center;
-    padding: $padding-base;
-    background-color: $mint-green;
-    border-radius: 5px;
-    transition: 0.5s ease-in-out;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  padding: $padding-base;
+  background-color: $mint-green;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
 
-    &__text {
-        text-align: center;
-        font-weight: 500;
-    }
+  &__text {
+    text-align: center;
+    font-weight: 500;
+  }
 
-    &:hover {
-        @include darker-hover($mint-green);
-        color: $white;
-    }
+  &:hover {
+    @include darker-hover($mint-green);
+    color: $white;
+  }
 }

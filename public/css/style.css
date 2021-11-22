@@ -63,14 +63,14 @@ p {
   border-radius: 5px;
   transition: 0.5s ease-in-out;
 }
+@media screen and (max-width: 749px) {
+  .contactbtn {
+    display: none;
+  }
+}
 .contactbtn__text {
   text-align: center;
   font-weight: 500;
-}
-@media screen and (max-width: 749px) {
-  .contactbtn__text {
-    display: none;
-  }
 }
 .contactbtn:hover {
   background-color: #00d68b;
@@ -195,15 +195,19 @@ p {
 @media screen and (max-width: 749px) {
   .navbar__menu {
     position: fixed;
-    left: -100%;
-    top: 5rem;
+    right: 0;
+    top: 4rem;
+    display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #181818;
     width: 100%;
-    border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+  .navbar__menu.active {
+    opacity: 1;
   }
 }
 .navbar__menu__link {
@@ -218,7 +222,12 @@ p {
 }
 @media screen and (max-width: 749px) {
   .navbar__menu__link {
-    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
   }
 }
 .navbar__menu__link::after {
@@ -232,11 +241,28 @@ p {
   opacity: 0;
   transition: 0.5s ease-in-out;
 }
+@media screen and (max-width: 749px) {
+  .navbar__menu__link::after {
+    display: none;
+  }
+}
 .navbar__menu__link:hover {
   color: #00ffa6;
 }
 .navbar__menu__link:hover::after {
   opacity: 1;
+}
+.navbar__menu__contact {
+  display: none;
+}
+@media screen and (max-width: 749px) {
+  .navbar__menu__contact {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #181818;
+    background-color: #00ffa6;
+  }
 }
 .navbar__hamburger {
   display: none;
@@ -246,13 +272,23 @@ p {
     display: block;
     cursor: pointer;
   }
-}
-.navbar__hamburger__bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: #FFFF;
+  .navbar__hamburger__bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 8px auto;
+    background-color: #FFFF;
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar__hamburger.active :nth-child(2) {
+    opacity: 0;
+  }
+  .navbar__hamburger.active :nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .navbar__hamburger.active :nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
