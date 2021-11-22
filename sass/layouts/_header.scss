@@ -25,6 +25,7 @@
     @include mobile-only {
       // Hamburger menu appears !
       position: fixed;
+      z-index: 99;
       right: 0;
       top: 4rem;
       display: flex;
@@ -97,6 +98,11 @@
         padding-bottom: $padding-base;
         color: $darker-grey;
         background-color: $mint-green;
+
+        &:hover {
+          @include darker-hover($mint-green);
+          color: $white;
+        }
       }
     }
   }
@@ -119,7 +125,8 @@
         transition: all 0.5s ease-in-out;
       }
 
-      &.active { // Transform bars to a cross if menu is open
+      &.active {
+        // Transform bars to a cross if menu is open
         :nth-child(2) {
           opacity: 0;
         }

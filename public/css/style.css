@@ -100,7 +100,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: auto;
+  height: 350px;
   background-color: #1D1425;
 }
 .aboutitle__textcontain {
@@ -195,6 +195,7 @@ p {
 @media screen and (max-width: 749px) {
   .navbar__menu {
     position: fixed;
+    z-index: 99;
     right: 0;
     top: 4rem;
     display: flex;
@@ -262,6 +263,10 @@ p {
     padding-bottom: 15px;
     color: #181818;
     background-color: #00ffa6;
+  }
+  .navbar__menu__contact:hover {
+    background-color: #00d68b;
+    color: #FFFF;
   }
 }
 .navbar__hamburger {
