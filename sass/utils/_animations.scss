@@ -1,0 +1,51 @@
+// KEYFRAMES ------------------------------------------------------------------
+
+// RANDOM WORDS ---------------------
+@keyframes randomwords {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 0, 5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+// TITLE ANIMATION -----------------
+@keyframes titleappear {
+  0% {
+    position: relative;
+    top: -1000px;
+  }
+
+  50% {
+    position: relative;
+    top: 60px;
+  }
+
+  60% {
+    position: relative;
+    top: 20px;
+  }
+
+  70% {
+    position: relative;
+    top: -20px;
+  }
+
+  90% {
+    position: relative;
+    top: 20;
+  }
+
+  100% {
+    position: relative;
+    top: 0;
+  }
+}

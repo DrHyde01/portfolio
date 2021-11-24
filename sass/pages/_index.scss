@@ -9,6 +9,7 @@
   &__textcontain {
     width: 60%;
     margin-left: 4rem;
+    animation: titleappear 1000ms ease-in-out;
 
     @include mobile-only {
       width: 100%;
@@ -18,8 +19,13 @@
     }
   }
 
+  &__randomword {
+    animation: randomwords 5000ms ease-in-out infinite;
+  }
+
   &__img {
     height: 350px;
+    display: flex;
 
     @include mobile-only {
       display: none;
