@@ -9,7 +9,7 @@
   &__textcontain {
     width: 60%;
     margin-left: 4rem;
-    animation: titleappear 1000ms ease-in-out;
+    animation: titleappear 1200ms ease-in-out; // Title animation
 
     @include mobile-only {
       width: 100%;
@@ -20,7 +20,7 @@
   }
 
   &__randomword {
-    animation: randomwords 5000ms ease-in-out infinite;
+    animation: randomwords 5000ms ease-in-out infinite; // Animation for random words
   }
 
   &__img {
@@ -78,4 +78,15 @@
       width: 60%;
     }
   }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  padding-top: $padding-lg;
+  padding-bottom: $padding-lg;
+  background-color: $dark-purple;
 }

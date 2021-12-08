@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,8 +32,9 @@
 
   <body>
     <nav class="navbar">
-      <img src="images/logo_v1.png" alt="logo SH" class="navbar__logo" />
-
+      <a href="../index.html">
+        <img src="../images/logo_v1.png" alt="logo SH" class="navbar__logo" />
+      </a>
       <!-- Responsive menu -->
       <div
         class="navbar__hamburger"
@@ -56,63 +57,9 @@
         </li>
       </ul>
 
-      <a href="./html/contact.html" class="contactbtn">
+      <a href="#" class="contactbtn">
         <span class="contactbtn__text">Contactez moi</span>
       </a>
     </nav>
-
-    <section class="aboutitle">
-      <div class="aboutitle__textcontain">
-        <h1 class="aboutitle__title">
-          Bonjour ! Je suis <span class="aboutitle__name">Stéphane Heyd</span
-          ><br />
-          votre développeur front-end
-          <span class="aboutitle__randomword"
-            >créatif</span
-          >
-        </h1>
-      </div>
-
-      <img
-        src="images/portrait.jpg"
-        alt="portrait Heyd Stéphane"
-        class="aboutitle__img"
-      />
-    </section>
-
-    <section class="about" id="about">
-      <div class="about__textcontain">
-        <div class="about__subcontain">
-          <h2 class="about__subtitle">A propos</h2>
-        </div>
-        <p>
-          La créativité et la curiosité ont toujours fait partie de ma vie.<br />
-          C’est grâce à elles que nous pouvons mieux affronter des problèmes et
-          faire naître des solutions pour ainsi avancer.
-        </p>
-        <p>
-          Et c’est cette recherche continuelle de savoir et d’innovation qui m’a
-          permis de me former au métier de dévéloppeur front-end. Car créer un
-          site ou une application web demandent certes de la technicité, mais
-          aussi de l’imagination, et de l’audace.
-        </p>
-        <p>
-          Du maquettage de votre projet à la livraison de celui-ci je partagerai
-          ces atouts pour vous proposer une solution optimale, et surtout
-          adaptée à votre image !
-        </p>
-      </div>
-
-      <a href="#" class="infobtn">
-        <span class="infobtn__text">Plus d'infos</span>
-      </a>
-    </section>
-
-    <section class="services" id="services">
-
-    </section>
-
-    <script src="js/scripts.js"></script>
-    <script src="js/index.js"></script>
   </body>
 </html>
