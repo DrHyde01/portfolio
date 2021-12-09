@@ -1,15 +1,18 @@
-// COLORS 
-$white: #FFFF;
+// COLORS
+$white: #ffff;
 $black: #0000;
 $darker-grey: #181818;
 $dark-grey: #595959;
-$light-grey: #AAAAAA;
+$light-grey: #aaaaaa;
 $mint-green: #00ffa6;
-$dark-purple: #1D1425;
+$cool-blue: #00f7ff;
+$light-purple: #21142b;
+$dark-purple: #1d1425;
 
 // MARGINS & PADDINGS
 $margin-none: 0px;
 $margin-sm: 5px;
+$margin-s: 10px;
 $margin-base: 15px;
 $margin-lg: 30px;
 $margin-xl: 50px;
@@ -20,13 +23,15 @@ $padding-xxl: 100px;
 $padding-xl: 50px;
 $padding-lg: 30px;
 $padding-base: 15px;
+$padding-s: 10px;
 $padding-sm: 5px;
 
 // MEDIAS QUERIES
 $breakpoints: (
-  mobile: 749px, // max
-  tablet: 1024px, // max
-  hd-screen: 1824px, // min
+  mobile: 749px,
+  // max
+  tablet: 1024px,
+  // max
+  hd-screen: 1824px,
+  // min
 );
-
-

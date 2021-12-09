@@ -1,0 +1,8 @@
+.servicesicon {
+  font-size: 80px;
+  display: block;
+  background: -webkit-linear-gradient($mint-green 40%, $cool-blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: $padding-lg;
+}
