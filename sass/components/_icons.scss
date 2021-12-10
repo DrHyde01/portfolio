@@ -1,3 +1,19 @@
+.socialicon {
+  font-size: 35px;
+  display: block;
+  background: -webkit-linear-gradient($mint-green 40%, $cool-blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.8;
+  padding: $padding-sm;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 5px $mint-green);
+  }
+}
+
 .servicesicon {
   font-size: 80px;
   display: block;
@@ -5,4 +21,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: $padding-lg;
+
+  @include mobile-only {
+    font-size: 50px;
+    padding: $padding-sm;
+  }
 }
