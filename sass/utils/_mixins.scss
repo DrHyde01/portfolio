@@ -7,7 +7,7 @@
 
 // Lighting and darking elements 
 @mixin darker-hover($colour) {
-  background-color: darken($colour, 8%);
+  background-color: darken($colour, 3%);
 }
 
 // Mixins for responsive

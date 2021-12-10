@@ -91,6 +91,9 @@
   padding-bottom: $padding-lg;
   background-color: $dark-purple;
 
+  &__contain {
+    width: 40%;
+  }
   &__subcontain {
     display: flex;
     justify-content: center;
@@ -116,6 +119,7 @@
   &__figcontain {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     margin-top: $margin-lg;
     margin-bottom: $margin-lg;
@@ -134,11 +138,20 @@
     box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
 
-    &:hover {
-      background-color: lighten($light-purple, 1%);
-      box-shadow: 0 0 20px $cool-blue, -10px 0 20px $mint-green,
-        10px 0 20px $cool-blue, inset 5px 0 20px $mint-green,
-        inset -5px 0 20px $cool-blue;
+    .servicesicon {
+      transition: 0.5s ease-in-out;
     }
+
+    &:hover {
+      background-color: lighten($light-purple, 2%);
+      .servicesicon {
+        filter: drop-shadow(0px 0px 10px $mint-green);
+      }
+    }
+  }
+
+  &__textcontain {
+    justify-content: center;
+    text-align: center;
   }
 }
