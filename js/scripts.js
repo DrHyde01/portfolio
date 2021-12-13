@@ -29,3 +29,27 @@ function closeMenu() {
 
   hamburger.setAttribute("aria-expanded", false); // Toggle accesibility status
 }
+
+// SHOW ON SCROLL 👀 --------------------------------------------------------------------------------
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 1.0,
+};
+
+const ratio = 0.2; // Representation of the percentage of the target element which is visible
+const handleIntersect = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      // Target element is visible
+      entry.target.classList.add("reveal-visible");
+      observer.unobserve(entry.target); // Stop the observer when element is visible
+    }
+  });
+};
+
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll(".reveal").forEach(function (revealElements) {
+  // Target all reveal elements
+  observer.observe(revealElements);
+});
