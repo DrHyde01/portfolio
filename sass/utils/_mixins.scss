@@ -10,6 +10,13 @@
   background-color: darken($colour, 3%);
 }
 
+// Cool gradiant 
+@mixin cool-gradiant {
+  background: -webkit-linear-gradient($mint-green 40%, $cool-blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // Mixins for responsive
 @mixin mobile-only {
   @media screen and (max-width: map-get($breakpoints, mobile)) {

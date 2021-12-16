@@ -38,8 +38,8 @@ const options = {
 };
 
 const ratio = 0.2; // Representation of the percentage of the target element which is visible
-const handleIntersect = function (entries, observer) {
-  entries.forEach(function (entry) {
+const handleIntersect = (entries, observer) => {
+  entries.forEach((entry) => {
     if (entry.intersectionRatio > ratio) {
       // Target element is visible
       entry.target.classList.add("reveal-visible");
@@ -49,7 +49,7 @@ const handleIntersect = function (entries, observer) {
 };
 
 const observer = new IntersectionObserver(handleIntersect, options);
-document.querySelectorAll(".reveal").forEach(function (revealElements) {
+document.querySelectorAll(".reveal").forEach((revealElements) => {
   // Target all reveal elements
   observer.observe(revealElements);
 });
