@@ -31,6 +31,9 @@
   &__social {
     display: flex;
     justify-content: start;
+    align-items: center;
+    margin-top: $margin-base;
+    margin-bottom: $margin-base;
   }
 
   &__img {
@@ -127,61 +130,20 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 40%;
     margin-top: $margin-lg;
     margin-bottom: $margin-lg;
 
     @include mobile-only {
-      align-items: center;
+      width: 80%;
       margin-top: $margin-base;
       margin-bottom: $margin-base;
     }
-  }
 
-  &__fig {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    margin-left: $margin-lg;
-    margin-right: $margin-lg;
-    padding: $padding-base;
-    background-color: $light-purple;
-    border-radius: 10px;
-    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
-    transition: 0.5s ease-in-out;
-
-    @include mobile-only {
-      width: 20%;
-      margin-left: $margin-base;
-      margin-right: $margin-base;
-      padding: $padding-sm;
-      background-color: $dark-purple;
-      border-radius: none;
-      box-shadow: none;
-    }
-
-    p {
-      @include cool-gradiant;
-      font-weight: 500;
-
-      @include mobile-only {
-        font-size: smaller;
-      }
-    }
-
-    .servicesicon {
-      transition: 0.5s ease-in-out;
-    }
-
-    &:hover {
-      background-color: lighten($light-purple, 2%);
-      @include mobile-only {
-        background-color: $dark-purple;
-      }
-      .servicesicon {
-        filter: drop-shadow(0px 0px 10px $mint-green);
-      }
+    @include tablet-only {
+      width: 60%;
+      margin-top: $margin-base;
+      margin-bottom: $margin-base;
     }
   }
 
@@ -231,5 +193,14 @@
       left: 0;
       bottom: 0;
     }
+  }
+
+  &__figcontain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin-top: $margin-lg;
+    margin-bottom: $margin-lg;
   }
 }

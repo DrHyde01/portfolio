@@ -1,10 +1,11 @@
 .socialicon {
-  font-size: 35px;
+  font-size: 2em;
   display: block;
   @include cool-gradiant;
+  opacity: 0.9;
   margin-right: $margin-sm;
   padding: $padding-sm;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 
   &:hover {
     opacity: 1;
@@ -13,13 +14,13 @@
 }
 
 .servicesicon {
-  font-size: 80px;
+  font-size: 5em;
   display: block;
   @include cool-gradiant;
   padding: $padding-lg;
 
   @include mobile-only {
-    font-size: 50px;
+    font-size: 3em;
     padding: $padding-sm;
   }
 }

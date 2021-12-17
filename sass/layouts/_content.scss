@@ -1,0 +1,81 @@
+// FIGURES & FIGCAPTIONS ---------------------------------------
+.services__fig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  margin-left: $margin-lg;
+  margin-right: $margin-lg;
+  padding: $padding-base;
+  background-color: $light-purple;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+
+  @include mobile-only {
+    margin-left: $margin-s;
+    margin-right: $margin-s;
+    padding: $padding-sm;
+    background-color: $dark-purple;
+    border-radius: none;
+    box-shadow: none;
+  }
+
+  @include tablet-only {
+    margin-left: $margin-base;
+    margin-right: $margin-base;
+    padding: $padding-s;
+  }
+
+  p {
+    @include cool-gradiant;
+    font-weight: 500;
+
+    @include mobile-only {
+      font-size: smaller;
+    }
+  }
+
+  .servicesicon {
+    transition: 0.5s ease-in-out;
+  }
+
+  &:hover {
+    background-color: lighten($light-purple, 2%);
+    @include mobile-only {
+      background-color: $dark-purple;
+    }
+    .servicesicon {
+      filter: drop-shadow(0px 0px 10px $mint-green);
+    }
+  }
+}
+
+.projects__fig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 25%;
+  margin-left: $margin-lg;
+  margin-right: $margin-lg;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      filter: none;
+      opacity: 1;
+    }
+  }
+}
