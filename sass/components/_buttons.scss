@@ -27,12 +27,16 @@
   height: 2em;
   display: flex;
   align-items: center;
-  padding: $padding-base;
+  padding: $padding-sm;
   margin-right: $margin-s;
   background: -webkit-linear-gradient($mint-green 40%, $cool-blue 100%);
   opacity: 0.9;
   border-radius: 3px;
   transition: 0.5s ease-in-out;
+
+  @include mobile-only {
+    height: 1.8em;
+  }
 
   &__text {
     text-align: center;
