@@ -202,5 +202,21 @@
     width: 60%;
     margin-top: $margin-lg;
     margin-bottom: $margin-lg;
+
+    @include mobile-only {
+      width: 80%;
+      margin-top: $margin-base;
+      margin-bottom: $margin-base;
+    }
+
+    @include tablet-only {
+      width: 80%;
+      margin-top: $margin-base;
+      margin-bottom: $margin-base;
+    }
+
+    @include hd-screen-only {
+      width: 50%;
+    }
   }
 }

@@ -230,6 +230,12 @@ strong {
   }
 }
 
+.projectsicon {
+  font-size: 1.3em;
+  display: block;
+  color: #ffff;
+}
+
 .aboutitle {
   display: flex;
   flex-direction: row;
@@ -428,6 +434,25 @@ strong {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 749px) {
+  .projects__figcontain {
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 749px) and (max-width: 1024px) {
+  .projects__figcontain {
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1824px) {
+  .projects__figcontain {
+    width: 50%;
+  }
+}
 
 .navbar {
   position: sticky;
@@ -620,7 +645,7 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: auto;
   width: 30%;
   position: relative;
   margin-left: 30px;
@@ -639,9 +664,7 @@ strong {
 }
 .projects__fig__img {
   width: 100%;
-  height: 300px;
   object-fit: fill;
-  object-position: top;
   transform: scale(1);
   transition: 0.5s ease-in-out;
 }
