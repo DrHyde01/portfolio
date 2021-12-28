@@ -239,3 +239,52 @@
     }
   }
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding-top: $padding-lg;
+  padding-bottom: $padding-lg;
+  background-color: $dark-purple;
+
+  &__subcontain {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__subtitle {
+    position: relative;
+    padding-left: $padding-sm;
+    padding-right: $padding-sm;
+    padding-bottom: $padding-sm;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0.1rem;
+      background-color: $mint-green;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__textcontain {
+    width: 40%;
+    text-align: center;
+    line-height: 1.3;
+    padding-bottom: $padding-lg;
+
+    @include mobile-only {
+      width: 80%;
+    }
+
+    @include tablet-only {
+      width: 60%;
+    }
+  }
+}
