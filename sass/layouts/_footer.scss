@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: $padding-xl;
+  padding-bottom: $padding-xl;
+  position: relative;
+  background-color: $darker-grey;
+
+  &__topicon {
+    position: absolute;
+    top: -25px;
+  }
+
+  &__social {
+    margin: $margin-base;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__copyright {
+    p {
+      text-align: center;
+      font-size: small;
+      color: $light-grey;
+    }
+  }
+}

@@ -215,7 +215,7 @@ strong {
 }
 @media screen and (max-width: 749px) {
   .socialicon {
-    font-size: 1.8em;
+    font-size: 2.2em;
   }
 }
 
@@ -238,6 +238,15 @@ strong {
   font-size: 1.3em;
   display: block;
   color: #ffff;
+}
+
+.topicon {
+  font-size: 3em;
+  color: #00ffa6;
+  transition: 0.5s ease-in-out;
+}
+.topicon:hover {
+  filter: drop-shadow(0px 0px 8px #00ffa6);
 }
 
 .aboutitle {
@@ -781,6 +790,32 @@ strong {
 }
 .projects__fig__caption p {
   font-weight: 200;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  background-color: #181818;
+}
+.footer__topicon {
+  position: absolute;
+  top: -25px;
+}
+.footer__social {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+.footer__copyright p {
+  text-align: center;
+  font-size: small;
+  color: #aaaaaa;
 }
 
 /*# sourceMappingURL=style.css.map */
