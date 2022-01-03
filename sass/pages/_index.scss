@@ -7,6 +7,10 @@
   height: 350px;
   background-color: $dark-purple;
 
+  @include hd-screen-only {
+    height: 500px;
+  }
+
   &__textcontain {
     width: 60%;
     margin-left: 4rem;
@@ -41,6 +45,10 @@
 
     @include mobile-only {
       display: none;
+    }
+
+    @include hd-screen-only {
+      height: 500px;
     }
   }
 }

@@ -278,6 +278,11 @@ strong {
   height: 350px;
   background-color: #1d1425;
 }
+@media screen and (min-width: 1824px) {
+  .aboutitle {
+    height: 500px;
+  }
+}
 .aboutitle__textcontain {
   width: 60%;
   margin-left: 4rem;
@@ -312,6 +317,11 @@ strong {
 @media screen and (max-width: 749px) {
   .aboutitle__img {
     display: none;
+  }
+}
+@media screen and (min-width: 1824px) {
+  .aboutitle__img {
+    height: 500px;
   }
 }
 
@@ -870,6 +880,11 @@ strong {
 }
 .formcontain form textarea {
   height: 150px;
+}
+.formcontain #returnmessage {
+  padding: 30px;
+  color: #f1f1f1;
+  text-align: center;
 }
 
 .footer {
