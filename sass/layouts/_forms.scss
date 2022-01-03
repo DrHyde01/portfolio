@@ -1,0 +1,43 @@
+// FORMS ------------------------------------------------------------------------------
+.formcontain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  padding-top: $padding-lg;
+  padding-bottom: $padding-lg;
+
+  @include mobile-only {
+    width: 60%;
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: $margin-s;
+      color: $white;
+    }
+
+    input,
+    textarea {
+      margin-bottom: $margin-base;
+      background-color: $white;
+    }
+
+    input {
+      height: 40px;
+      background-color: $white;
+      border-radius: 5px;
+    }
+
+    textarea {
+      height: 150px;
+      border-radius: 5px;
+    }
+  }
+}
