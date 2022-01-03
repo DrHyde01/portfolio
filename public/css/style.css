@@ -73,7 +73,7 @@ a {
 
 p {
   font-weight: 300;
-  color: whitesmoke;
+  color: #f1f1f1;
 }
 
 strong {
@@ -84,7 +84,7 @@ strong {
 .aboutitle__title {
   font-size: 2em;
   font-weight: 400;
-  color: whitesmoke;
+  color: #f1f1f1;
 }
 @media screen and (max-width: 749px) {
   .aboutitle__title {
@@ -123,7 +123,7 @@ strong {
 .subtitle {
   font-size: 1.2em;
   font-weight: 300;
-  color: whitesmoke;
+  color: #f1f1f1;
 }
 
 .contactbtn {
@@ -195,6 +195,29 @@ strong {
   filter: drop-shadow(0px 0px 8px #00ffa6);
 }
 
+.submitbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #00ffa6;
+  border-radius: 5px;
+  border: 0;
+  transition: 0.5s ease-in-out;
+}
+.submitbtn__text {
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 500;
+  line-height: 0;
+}
+.submitbtn:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 8px #00ffa6);
+}
+
 .socialicon {
   font-size: 2em;
   display: block;
@@ -234,7 +257,7 @@ strong {
 .projectsicon {
   font-size: 1.3em;
   display: block;
-  color: whitesmoke;
+  color: #f1f1f1;
 }
 
 .topicon {
@@ -391,6 +414,11 @@ strong {
     margin-bottom: 15px;
   }
 }
+@media screen and (min-width: 1824px) {
+  .services__figcontain {
+    width: 30%;
+  }
+}
 .services__textcontain {
   width: 40%;
   text-align: center;
@@ -464,7 +492,7 @@ strong {
 }
 @media screen and (min-width: 1824px) {
   .projects__figcontain {
-    width: 50%;
+    width: 40%;
   }
 }
 .projects__textcontain {
@@ -527,6 +555,11 @@ strong {
 @media screen and (min-width: 749px) and (max-width: 1024px) {
   .contact__textcontain {
     width: 60%;
+  }
+}
+@media screen and (min-width: 1824px) {
+  .contact__textcontain {
+    width: 40%;
   }
 }
 
@@ -630,7 +663,7 @@ strong {
   }
   .navbar__menu__contact:hover {
     background-color: #00f09c;
-    color: whitesmoke;
+    color: #f1f1f1;
   }
 }
 .navbar__hamburger {
@@ -646,7 +679,7 @@ strong {
     width: 25px;
     height: 2px;
     margin: 8px auto;
-    background-color: whitesmoke;
+    background-color: #f1f1f1;
     transition: all 0.5s ease-in-out;
   }
   .navbar__hamburger.active :nth-child(2) {
@@ -754,6 +787,7 @@ strong {
   position: relative;
   width: 100%;
   object-fit: fill;
+  filter: contrast(80%);
   transform: scale(1);
   transition: 0.5s ease-in-out;
 }
@@ -782,49 +816,60 @@ strong {
   }
 }
 .projects__fig__caption h3 {
-  color: whitesmoke;
+  color: #f1f1f1;
 }
 .projects__fig__caption p {
   font-weight: 200;
 }
 
 .formcontain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  align-items: center;
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   height: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 @media screen and (max-width: 749px) {
   .formcontain {
+    width: 80%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media screen and (min-width: 749px) and (max-width: 1024px) {
+  .formcontain {
     width: 60%;
-    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1824px) {
+  .formcontain {
+    width: 20%;
   }
 }
 .formcontain form {
   display: flex;
   flex-direction: column;
-}
-.formcontain form label {
-  margin-bottom: 10px;
-  color: whitesmoke;
+  align-items: center;
 }
 .formcontain form input,
 .formcontain form textarea {
   margin-bottom: 15px;
-  background-color: whitesmoke;
+  padding: 10px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1em;
+}
+.formcontain form input:focus,
+.formcontain form textarea:focus {
+  outline-color: #21142b;
 }
 .formcontain form input {
   height: 40px;
-  background-color: whitesmoke;
-  border-radius: 5px;
 }
 .formcontain form textarea {
   height: 150px;
-  border-radius: 5px;
 }
 
 .footer {

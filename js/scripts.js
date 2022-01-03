@@ -53,3 +53,29 @@ document.querySelectorAll(".reveal").forEach((revealElements) => {
   // Target all reveal elements
   observer.observe(revealElements);
 });
+
+// EMAILJS INTEGRATION ✉️ -------------------------------------------------------------------------------
+(function () {
+  emailjs.init("user_WTgxSZHbJ9zP7NHGFHjgU");
+})();
+
+// listen to the form submission
+document.getElementById("myForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const serviceID = "OVH SMTP";
+  const templateID = "template_9k3gt32";
+
+  // send the email here
+  emailjs.sendForm(serviceID, templateID, this).then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("Votre demande a bien été transmise ! 🙂");
+      document.getElementById("myForm").reset(); // Reset the form if succes
+    },
+    (error) => {
+      console.log("FAILED...", error);
+      alert("On dirait que ça ne fonctionne pas 🤔", error);
+    }
+  );
+});

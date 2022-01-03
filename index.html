@@ -27,6 +27,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
     <title>Stéphane Heyd - Développeur frontend créatif</title>
   </head>
 
@@ -248,25 +253,44 @@
           développement web ?
         </p>
         <p>
-          Ne soyez pas timides, il y a de nombreux moyens pour me contacter,
-          dont ce formulaire 🙂
+          Ne soyez pas timide, il y a de nombreux moyens pour me contacter, dont
+          ce formulaire 🙂
         </p>
       </div>
 
-      <div class="formcontain">
-        <form>
-          <label for="name">Nom</label>
-          <input type="text" name="name" id="name" required="required" />
+      <div class="formcontain reveal">
+        <form id="myForm">
+          <label for="name"></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            pattern="[A-Za-zÀ-ú ]{1,50}"
+            placeholder="Nom"
+            required="required"
+          />
 
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" required="required" />
-        </form>
+          <label for="email"></label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            pattern="[a-z0-9\._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}"
+            placeholder="Email"
+            required="required"
+          />
 
-        <form>
-          <label for="message">Votre message</label>
-          <textarea name="message" id="message" required="required"></textarea>
+          <label for="message"></label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Votre message"
+            required="required"
+          ></textarea>
 
-          <button class="submitbtn" type="submit">Envoyer</button>
+          <button class="submitbtn" type="submit">
+            <span class="submitbtn__text">Envoyer</span>
+          </button>
         </form>
       </div>
     </section>

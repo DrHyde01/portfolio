@@ -146,6 +146,10 @@
       margin-top: $margin-base;
       margin-bottom: $margin-base;
     }
+
+    @include hd-screen-only {
+      width: 30%;
+    }
   }
 
   &__textcontain {
@@ -220,7 +224,7 @@
     }
 
     @include hd-screen-only {
-      width: 50%;
+      width: 40%;
     }
   }
 
@@ -277,7 +281,6 @@
     width: 40%;
     text-align: center;
     line-height: 1.3;
-    
 
     @include mobile-only {
       width: 80%;
@@ -285,6 +288,10 @@
 
     @include tablet-only {
       width: 60%;
+    }
+
+    @include hd-screen-only {
+      width: 40%;
     }
   }
 }

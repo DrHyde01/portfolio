@@ -71,6 +71,7 @@
     width: 100%;
   }
 
+
   &:hover {
     .projects__fig__img {
       transform: scale(1.5);
@@ -91,6 +92,7 @@
     position: relative;
     width: 100%;
     object-fit: fill;
+    filter: contrast(80%);
     transform: scale(1);
     transition: 0.5s ease-in-out;
 
