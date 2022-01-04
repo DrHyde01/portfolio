@@ -8,7 +8,6 @@
   position: relative;
   background-color: $dark-purple;
 
-
   @include tablet-only {
     justify-content: center;
   }
@@ -80,7 +79,7 @@
     transition: 0.5s ease-in-out;
 
     @include mobile-only {
-     display: none;
+      display: none;
     }
 
     @include tablet-only {
@@ -107,14 +106,14 @@
   align-items: center;
   width: 100%;
   height: auto;
-  padding: $padding-xxl;
-  position: relative;
+  padding-top: $padding-xl;
+  padding-bottom: $padding-xl;
   background-color: $darker-grey;
 
   &__container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 90%;
 
     @include mobile-only {
       flex-direction: column;
@@ -125,14 +124,26 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 50%;
+    height: auto;
+    margin: $margin-base;
     padding: $padding-lg;
-    background-color: $dark-purple;
+    background-color: $light-purple;
     border-radius: 5px;
     box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
 
     &__title {
       display: flex;
       align-items: center;
+    }
+
+    ul {
+      margin-left: -1.5em;
+    }
+
+    li {
+      color: $white;
+      margin-bottom: 1em;
     }
   }
 }
