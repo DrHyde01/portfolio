@@ -13,6 +13,12 @@ p {
   color: $white;
 }
 
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: $white;
+}
+
 strong {
   color: $mint-green;
   font-weight: 400;
@@ -51,16 +57,9 @@ strong {
 .aboutitle__randomword {
   color: $mint-green;
   filter: drop-shadow(0px 0px 10px $mint-green);
-  
 }
 
-.subtitle {
-  font-size: 1.2em;
-  font-weight: 300;
-  color: $white;
-}
-
-.presentation__title {
+.presentation__container__title {
   font-size: 2em;
   font-weight: 400;
   color: $white;
@@ -75,4 +74,3 @@ strong {
     font-weight: 300;
   }
 }
-
