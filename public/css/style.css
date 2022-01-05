@@ -130,7 +130,13 @@ p {
 
 h2 {
   font-size: 1.2em;
-  font-weight: 300;
+  font-weight: 500;
+  color: #f1f1f1;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 500;
   color: #f1f1f1;
 }
 
@@ -341,8 +347,12 @@ strong {
 
 .resumeicon {
   font-size: 1.5em;
-  margin-left: 1em;
+  margin-left: 0.5em;
   color: #f1f1f1;
+}
+
+.skillicon {
+  font-size: 3em;
 }
 
 .aboutitle {
@@ -867,11 +877,79 @@ strong {
   align-items: center;
 }
 .resume__card ul {
-  margin-left: -1.5em;
+  border-left: solid 2px #00ffa6;
 }
 .resume__card li {
   color: #f1f1f1;
   margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1d1425;
+}
+.skills__title {
+  display: flex;
+  align-items: center;
+}
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  width: 50%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 749px) {
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 749px) and (max-width: 1024px) {
+  .skills__container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1824px) {
+  .skills__container {
+    width: 40%;
+  }
+}
+.skills__card {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  padding: 30px;
+  background-color: #21142b;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+.skills__card:hover {
+  background-color: #261732;
+  transform: scale(1.1);
+}
+.skills__card ul {
+  margin-left: -2em;
+}
+.skills__card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .navbar {
