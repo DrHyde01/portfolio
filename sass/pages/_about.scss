@@ -262,13 +262,13 @@
     flex-direction: column;
     height: 400px;
     padding: $padding-lg;
-    background-color: $light-purple;
+    background-color: $darker-grey;
     border-radius: 5px;
     box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
     transition: 0.5s ease-in-out;
 
     &:hover {
-      background-color: lighten($light-purple, 2%);
+      background-color: lighten($darker-grey, 2%);
       transform: scale(1.1);
     }
 
@@ -283,6 +283,16 @@
       color: $white;
       margin-bottom: 1em;
       margin-top: 1em;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+    p {
+      text-align: center;
     }
   }
 }

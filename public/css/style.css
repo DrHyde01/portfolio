@@ -931,13 +931,13 @@ strong {
   flex-direction: column;
   height: 400px;
   padding: 30px;
-  background-color: #21142b;
+  background-color: #181818;
   border-radius: 5px;
   box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
 }
 .skills__card:hover {
-  background-color: #261732;
+  background-color: #1d1d1d;
   transform: scale(1.1);
 }
 .skills__card ul {
@@ -950,6 +950,14 @@ strong {
   color: #f1f1f1;
   margin-bottom: 1em;
   margin-top: 1em;
+}
+.skills__bottom {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.skills__bottom p {
+  text-align: center;
 }
 
 .navbar {
