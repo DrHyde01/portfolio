@@ -18,7 +18,7 @@
   &__textcontain {
     width: 60%;
     margin-left: 4rem;
-    animation: titleappear 1200ms ease-in-out; // Title animation
+    animation: topappear 1200ms ease-in-out; // Title animation
 
     @include mobile-only {
       width: 100%;

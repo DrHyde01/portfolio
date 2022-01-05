@@ -18,7 +18,7 @@
 }
 
 // TITLE ANIMATION -----------------------
-@keyframes titleappear {
+@keyframes topappear {
   0% {
     position: relative;
     top: -1000px;
@@ -51,6 +51,70 @@
 }
 
 // OTHER ANIMATIONS -------------------------------------------------------------
+
+@keyframes leftappear{
+  0% {
+    position: absolute;
+    left: -1000px;
+  }
+
+  50% {
+    position: absolute;
+    left: 60px;
+  }
+
+  60% {
+    position: absolute;
+    left: 20px;
+  }
+
+  70% {
+    position: absolute;
+    left: -20px;
+  }
+
+  90% {
+    position: absolute;
+    left: 20;
+  }
+
+  100% {
+    position: absolute;
+    left: 0;
+  }
+}
+
+@keyframes rightappear{
+  0% {
+    position: absolute;
+    right: -1000px;
+  }
+
+  50% {
+    position: absolute;
+    right: 60px;
+  }
+
+  60% {
+    position: absolute;
+    right: 20px;
+  }
+
+  70% {
+    position: absolute;
+    right: -20px;
+  }
+
+  90% {
+    position: absolute;
+    right: 20;
+  }
+
+  100% {
+    position: absolute;
+    right: 0;
+  }
+}
 
 // REAVEL EFFECT -------------------
 .reveal {
