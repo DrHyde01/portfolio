@@ -4,7 +4,7 @@ const randomIcon = [
   "intro__icon fas fa-code servicesicon",
   "intro__icon fas fa-tools servicesicon",
   "intro__icon fas fa-eye servicesicon",
-  "intro__icon far fa-lightbulb servicesicon",
+  "intro__icon fas fa-server servicesicon",
 ];
 
 const icon = document.querySelector(".intro__icon");

@@ -214,25 +214,24 @@
           position: initial;
         }
       }
-    
 
-    &--reverse {
+      &--reverse {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-  
+
         @include mobile-only {
           justify-content: space-between;
         }
         h3 {
           color: $mint-green;
         }
-  
+
         .servicescardicon {
           position: absolute;
           left: -15px;
           top: -15px;
-  
+
           @include mobile-only {
             position: initial;
           }
@@ -242,6 +241,39 @@
 
     p {
       line-height: 1.5;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: $dark-purple;
+  padding: $padding-lg;
+
+  &__text {
+    width: 60%;
+    margin: $margin-lg;
+
+    @include mobile-only {
+      width: 100%;
+    }
+
+    @include tablet-only {
+      width: 80%;
+    }
+    p {
+      text-align: center;
+      line-height: 1.5;
+
+      a {
+        font-weight: 600;
+        color: $mint-green;
+      }
     }
   }
 }

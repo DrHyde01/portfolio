@@ -71,7 +71,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   emailjs.sendForm(serviceID, templateID, this).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
-      messageReturn.innerHTML = 'Votre message a bien été transmis, je vous réponderai dans les meilleurs délais 🙂'
+      messageReturn.innerHTML = 'Votre message a bien été transmis, je vous répondrai dans les meilleurs délais 🙂'
       document.getElementById("myForm").reset(); // Reset the form if succes
     },
     (error) => {
