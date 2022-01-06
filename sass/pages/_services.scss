@@ -108,11 +108,140 @@
     filter: saturate(0) opacity(0.2);
 
     @include mobile-only {
-      height: 950px;
+      height: 850px;
     }
 
     @include tablet-only {
-      height: 1000px;
+      height: 800px;
+    }
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: middle;
+  width: 100%;
+  height: auto;
+  padding-top: $padding-xl;
+  padding-bottom: $padding-xl;
+  background-color: $darker-grey;
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin-top: $margin-xl;
+    margin-bottom: $margin-xl;
+
+    @include mobile-only {
+      width: 90%;
+    }
+
+    @include tablet-only {
+      width: 90%;
+    }
+
+    @include hd-screen-only {
+      width: 40%;
+    }
+
+    &__vertical {
+      position: absolute;
+      width: 3px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      margin-left: -2px;
+      background-color: $mint-green;
+      z-index: 0;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    padding: $padding-lg;
+    margin: $margin-xl;
+    position: relative;
+    z-index: 1;
+    background-color: $dark-purple;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+
+    @include mobile-only {
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: lighten($light-purple, 2%);
+      transform: scale(1.1);
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+
+      @include mobile-only {
+        justify-content: space-between;
+      }
+      h3 {
+        color: $mint-green;
+      }
+
+      .servicescardicon {
+        position: absolute;
+        right: -15px;
+        top: -15px;
+
+        @include mobile-only {
+          position: initial;
+        }
+      }
+    
+
+    &--reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+  
+        @include mobile-only {
+          justify-content: space-between;
+        }
+        h3 {
+          color: $mint-green;
+        }
+  
+        .servicescardicon {
+          position: absolute;
+          left: -15px;
+          top: -15px;
+  
+          @include mobile-only {
+            position: initial;
+          }
+        }
+      }
+    }
+
+    p {
+      line-height: 1.5;
     }
   }
 }

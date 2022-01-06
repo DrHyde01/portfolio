@@ -45,7 +45,8 @@
   }
 }
 
-.resumeicon {
+.resumeicon,
+.sercivestitleicon {
   font-size: 1.5em;
   margin-left: 0.5em;
   color: $white;
@@ -53,4 +54,13 @@
 
 .skillicon {
   font-size: 3em;
+}
+
+.servicescardicon {
+  font-size: 4em;
+  @include cool-gradiant;
+
+  @include mobile-only {
+    font-size: 3em;
+  }
 }
