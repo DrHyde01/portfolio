@@ -1,0 +1,118 @@
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-color: $dark-purple;
+
+  @include mobile-only {
+    justify-content: center;
+    height: 850px;
+  }
+
+  @include tablet-only {
+    justify-content: center;
+    height: 800px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    padding: $padding-lg;
+    margin-left: $margin-xxl;
+    position: absolute;
+    z-index: 1;
+    background-color: $darker-grey;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    animation: leftappear 1200ms ease-in-out;
+
+    @include mobile-only {
+      width: 100%;
+      margin-left: 0;
+      margin-top: $margin-lg;
+      padding-top: $padding-lg;
+      background-color: transparent;
+      border-radius: none;
+      box-shadow: none;
+      animation: none;
+    }
+
+    @include tablet-only {
+      width: 60%;
+      margin-left: 0;
+      margin-top: $margin-lg;
+      animation: none;
+    }
+
+    @include hd-screen-only {
+      width: 30%;
+      margin-left: 20%;
+    }
+
+    &__title {
+      position: relative;
+      margin: 0;
+      padding-left: $padding-sm;
+      padding-right: $padding-sm;
+      padding-bottom: $padding-sm;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.1rem;
+        background-color: $mint-green;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    font-size: 10em;
+    margin-right: $margin-xxl;
+    padding: $padding-xxl;
+    right: 0;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 5px $mint-green);
+    animation: randomwords 5000ms ease-in-out infinite;
+
+    @include mobile-only {
+      visibility: hidden;
+    }
+
+    @include tablet-only {
+      visibility: hidden;
+    }
+
+    @include hd-screen-only {
+      margin-right: 20%;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    filter: saturate(0) opacity(0.2);
+
+    @include mobile-only {
+      height: 950px;
+    }
+
+    @include tablet-only {
+      height: 1000px;
+    }
+  }
+}

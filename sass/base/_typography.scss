@@ -30,22 +30,6 @@ strong {
   font-weight: 400;
 }
 
-.aboutitle__title {
-  font-size: 2em;
-  font-weight: 400;
-  color: $white;
-
-  @include mobile-only {
-    font-size: 1.8em;
-    font-weight: 300;
-  }
-
-  @include tablet-only {
-    font-size: 1.6em;
-    font-weight: 300;
-  }
-}
-
 .aboutitle__name {
   font-size: 1.5em;
 
@@ -65,7 +49,9 @@ strong {
   filter: drop-shadow(0px 0px 10px $mint-green);
 }
 
-.presentation__container__title {
+.aboutitle__title,
+.presentation__container__title,
+.intro__container__title {
   font-size: 2em;
   font-weight: 400;
   color: $white;
