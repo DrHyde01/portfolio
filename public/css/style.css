@@ -964,6 +964,36 @@ strong {
   text-align: center;
 }
 
+.intro__projectsimg {
+  height: 500px;
+  position: absolute;
+  margin-right: 100px;
+  right: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: rightappear 1200ms ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.intro__projectsimg:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 749px) {
+  .intro__projectsimg {
+    display: none;
+  }
+}
+@media screen and (min-width: 749px) and (max-width: 1024px) {
+  .intro__projectsimg {
+    display: none;
+  }
+}
+@media screen and (min-width: 1824px) {
+  .intro__projectsimg {
+    margin-right: 20%;
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: row;
