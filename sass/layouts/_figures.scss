@@ -71,7 +71,6 @@
     width: 100%;
   }
 
-
   &:hover {
     .projects__fig__img {
       transform: scale(1.5);
@@ -129,3 +128,94 @@
   }
 }
 
+.portfolio__fig {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 400px;
+  padding-left: 0px;
+  padding-right: $padding-lg;
+  padding-top: $padding-lg;
+  padding-bottom: $padding-lg;
+  margin: $margin-xl;
+  background-color: $dark-purple;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+
+  &--left {
+    margin-right: auto;
+  }
+
+  &--right {
+    margin-left: auto;
+    flex-direction: row-reverse;
+  }
+
+  @include mobile-only {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: lighten($light-purple, 2%);
+
+    .portfolio__fig__img {
+      object-position: 50% 50%;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: 0% 50%;
+    width: 30%;
+    height: 400px;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.portfolio__caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: $margin-lg;
+  margin-right: $margin-lg;
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      margin-right: $margin-base;
+      color: $mint-green;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    font-size: 0.9em;
+    font-weight: 200;
+  }
+
+  &__icons {
+    margin-top: $margin-s;
+    margin-bottom: $margin-s;
+  }
+
+  &__description {
+    line-height: 1.5em;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: $margin-base;
+    margin-bottom: $margin-base;
+  }
+}

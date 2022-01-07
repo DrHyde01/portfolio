@@ -27,3 +27,42 @@
       }
   }
 }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: $padding-xl;
+  padding-bottom: $padding-xl;
+  background-color: $darker-grey;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: $margin-xl;
+    margin-bottom: $margin-xl;
+
+    @include mobile-only {
+      width: 90%;
+    }
+
+    @include tablet-only {
+      width: 90%;
+    }
+
+    @include hd-screen-only {
+      width: 40%;
+    }
+  }
+
+  
+
+}
