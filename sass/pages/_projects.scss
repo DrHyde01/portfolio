@@ -10,21 +10,21 @@
     transition: 0.5s ease-in-out;
 
     &:hover {
-        opacity: 1;
-        transform: scale(1.1);
+      opacity: 1;
+      transform: scale(1.1);
     }
 
     @include mobile-only {
-        display: none;
+      display: none;
     }
 
     @include tablet-only {
-        display: none;
+      display: none;
     }
 
     @include hd-screen-only {
-        margin-right: 20%;
-      }
+      margin-right: 20%;
+    }
   }
 }
 
@@ -62,7 +62,4 @@
       width: 60%;
     }
   }
-
-  
-
 }

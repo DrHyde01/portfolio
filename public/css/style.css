@@ -1311,39 +1311,6 @@ strong {
   line-height: 1.5;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: #1d1425;
-  padding: 30px;
-}
-.contact__text {
-  width: 60%;
-  margin: 30px;
-}
-@media screen and (max-width: 749px) {
-  .contact__text {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 749px) and (max-width: 1024px) {
-  .contact__text {
-    width: 80%;
-  }
-}
-.contact__text p {
-  text-align: center;
-  line-height: 1.5;
-}
-.contact__text p a {
-  font-weight: 600;
-  color: #00ffa6;
-}
-
 .navbar {
   position: sticky;
   z-index: 99;
@@ -1639,6 +1606,7 @@ strong {
 .portfolio__fig--right {
   margin-left: auto;
   flex-direction: row-reverse;
+  padding-right: 0px;
 }
 @media screen and (max-width: 749px) {
   .portfolio__fig--right {
@@ -1694,7 +1662,7 @@ strong {
 }
 @media screen and (min-width: 749px) and (max-width: 1024px) {
   .portfolio__fig__img {
-    object-position: 0% 0%;
+    object-position: 0% 50%;
     width: 100%;
     height: 200px;
   }
@@ -1816,6 +1784,39 @@ strong {
   text-align: center;
   font-size: small;
   color: #aaaaaa;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #1d1425;
+  padding: 30px;
+}
+.contact__text {
+  width: 60%;
+  margin: 30px;
+}
+@media screen and (max-width: 749px) {
+  .contact__text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 749px) and (max-width: 1024px) {
+  .contact__text {
+    width: 80%;
+  }
+}
+.contact__text p {
+  text-align: center;
+  line-height: 1.5;
+}
+.contact__text p a {
+  font-weight: 600;
+  color: #00ffa6;
 }
 
 /*# sourceMappingURL=style.css.map */

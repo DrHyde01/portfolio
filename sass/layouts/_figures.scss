@@ -163,6 +163,7 @@
   &--right {
     margin-left: auto;
     flex-direction: row-reverse;
+    padding-right: 0px;
 
     @include mobile-only {
       margin-right: $margin-xl;
@@ -215,7 +216,7 @@
     }
 
     @include tablet-only {
-      object-position: 0% 0%;
+      object-position: 0% 50%;
       width: 100%;
       height: 200px;
     }
