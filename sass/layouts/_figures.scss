@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 33%;
+  height: auto;
   margin-left: $margin-lg;
   margin-right: $margin-lg;
   padding: $padding-base;
@@ -134,7 +135,7 @@
   justify-content: center;
   justify-self: flex-start;
   align-items: center;
-  width: 80%;
+  width: 90%;
   height: 400px;
   padding-left: 0px;
   padding-right: $padding-lg;
@@ -149,15 +150,47 @@
 
   &--left {
     margin-right: auto;
+
+    @include mobile-only {
+      margin-right: $margin-xl;
+    }
+
+    @include tablet-only {
+      margin-right: $margin-xl;
+    }
   }
 
   &--right {
     margin-left: auto;
     flex-direction: row-reverse;
+
+    @include mobile-only {
+      margin-right: $margin-xl;
+    }
+
+    @include tablet-only {
+      margin-right: $margin-xl;
+    }
   }
 
   @include mobile-only {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin: $margin-lg;
+  }
+
+  @include tablet-only {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin: $margin-lg;
   }
 
   &:hover {
@@ -174,6 +207,18 @@
     width: 30%;
     height: 400px;
     transition: 0.5s ease-in-out;
+
+    @include mobile-only {
+      object-position: 0% 0%;
+      width: 100%;
+      height: 200px;
+    }
+
+    @include tablet-only {
+      object-position: 0% 0%;
+      width: 100%;
+      height: 200px;
+    }
   }
 }
 

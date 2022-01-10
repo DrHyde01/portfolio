@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     position: relative;
     margin-top: $margin-xl;
@@ -59,7 +59,7 @@
     }
 
     @include hd-screen-only {
-      width: 40%;
+      width: 60%;
     }
   }
 
