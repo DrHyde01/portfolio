@@ -1729,6 +1729,11 @@ strong {
     margin: 30px;
   }
 }
+@media screen and (min-width: 1824px) {
+  .portfolio__fig {
+    width: 80%;
+  }
+}
 .portfolio__fig:hover {
   background-color: #261732;
 }
@@ -1738,7 +1743,7 @@ strong {
 .portfolio__fig__img {
   object-fit: cover;
   object-position: 0% 50%;
-  width: 30%;
+  min-width: 30%;
   height: 400px;
   transition: 0.5s ease-in-out;
 }
@@ -1756,6 +1761,11 @@ strong {
     height: 200px;
   }
 }
+@media screen and (min-width: 1824px) {
+  .portfolio__fig__img {
+    min-width: 25%;
+  }
+}
 
 .portfolio__caption {
   display: flex;
@@ -1764,6 +1774,7 @@ strong {
   align-items: flex-start;
   margin-left: 30px;
   margin-right: 30px;
+  width: auto;
 }
 .portfolio__caption__title {
   display: flex;
