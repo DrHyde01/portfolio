@@ -35,6 +35,14 @@
     }
     .servicesicon {
       filter: drop-shadow(0px 0px 10px $mint-green);
+
+      @include mobile-only {
+        filter: none;
+      }
+
+      @include tablet-only {
+        filter: none;
+      }
     }
   }
 

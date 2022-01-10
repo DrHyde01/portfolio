@@ -124,6 +124,14 @@
 
     &:hover {
       transform: rotate(15deg);
+
+      @include mobile-only {
+        transform: translate(-50%, -50%);
+      }
+
+      @include tablet-only {
+        transform: translate(-50%, -50%)
+      }
     }
   }
 
