@@ -427,13 +427,13 @@ strong {
 }
 
 .portfoliolink {
-  font-size: 2em;
+  font-size: 1.8em;
   display: block;
   background: -webkit-linear-gradient(#00ffa6 40%, #00f7ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.9;
-  margin-right: 30px;
+  margin-right: 25px;
   transition: 0.5s ease-in-out;
 }
 .portfoliolink:hover {
@@ -452,7 +452,7 @@ strong {
 }
 @media screen and (max-width: 749px) {
   .portfoliolink {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 }
 
