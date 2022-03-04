@@ -1,32 +1,32 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: $dark-purple;
-    padding: $padding-lg;
-  
-    &__text {
-      width: 60%;
-      margin: $margin-lg;
-  
-      @include mobile-only {
-        width: 100%;
-      }
-  
-      @include tablet-only {
-        width: 80%;
-      }
-      p {
-        text-align: center;
-        line-height: 1.5;
-  
-        a {
-          font-weight: 600;
-          color: $mint-green;
-        }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: $dark-purple;
+  padding: $padding-lg;
+
+  &__text {
+    width: 60%;
+    margin: $margin-lg;
+
+    @include mobile-only {
+      width: 100%;
+    }
+
+    @include tablet-only {
+      width: 80%;
+    }
+    p {
+      text-align: center;
+      line-height: 1.5;
+
+      a {
+        font-weight: 600;
+        color: $mint-green;
       }
     }
   }
+}
