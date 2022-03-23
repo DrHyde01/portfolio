@@ -9,7 +9,7 @@ const randomIcon = [
 
 const icon = document.querySelector(".intro__icon");
 
-function getRandomIcon() {
+getRandomIcon = () => {
   setInterval(() => {
     // To change word every 5s
     const indx = Math.floor(Math.random() * randomIcon.length); // Pick a random number of the array length
@@ -17,6 +17,6 @@ function getRandomIcon() {
 
     icon.className = iconNew; // Put the icon link in the html
   }, 5000);
-}
+};
 
 getRandomIcon();

@@ -10,7 +10,7 @@ const randomWord = [
 ];
 const text = document.querySelector(".aboutitle__randomword");
 
-function getRandomWord() {
+getRandomWord = () => {
   setInterval(() => {
     // To change word every 5s
     const indx = Math.floor(Math.random() * randomWord.length); // Pick a random number of the array length
@@ -18,6 +18,6 @@ function getRandomWord() {
 
     text.innerHTML = word; // Put the word in the html
   }, 5000);
-}
+};
 
 getRandomWord();
