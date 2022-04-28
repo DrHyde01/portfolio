@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="développeur web, développeur freelance, développeur frontend, freelance developper, developpeur france, developpeur strasbourg, integration web, programmation web, SEO"
+    />
+    <meta
+      name="description"
+      content="Un aperçu de mes projets, professionnels ou personnels"
+    />
+
+    <!-- Open graph data -->
+    <meta property="og:title" content="Stéphane Heyd - Mes projets" />
+    <meta
+      property="og:site_name"
+      content="Stéphane Heyd - Développeur frontend créatif"
+    />
+    <meta property="og:url" content="stefanheyd.com/projects.html" />
+    <meta
+      property="og:description"
+      content="Un aperçu de mes projets, professionnels ou personnels"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://stefanheyd.com/images/portrait.jpg"
+    />
+
+    <!-- Twitter card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta
+      name="twitter:title"
+      content="Stéphane Heyd - Développeur frontend créatif"
+    />
+    <meta
+      name="twitter:description"
+      content="Un aperçu de mes projets, professionnels ou personnels"
+    />
+    <meta name="twitter:image" content="stefanheyd.com//images/portrait.jpg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1d8f57007c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Stéphane Heyd - Projets</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="../index.html">
+        <img src="../images/logo_v1.png" alt="logo SH" class="navbar__logo" />
+      </a>
+
+      <!-- Responsive menu -->
+      <div
+        class="navbar__hamburger"
+        aria-label="Afficher le menu"
+        aria-expanded="false"
+      >
+        <span class="navbar__hamburger__bar"></span>
+        <span class="navbar__hamburger__bar"></span>
+        <span class="navbar__hamburger__bar"></span>
+      </div>
+
+      <ul class="navbar__menu">
+        <li>
+          <a href="./about.html" class="navbar__menu__link">À propos</a>
+          <a href="./services.html" class="navbar__menu__link">Services</a>
+          <a href="./projects.html" class="navbar__menu__link">Projets</a>
+          <a href="../index.html#contact" class="navbar__menu__contact">
+            Contactez moi</a
+          >
+        </li>
+      </ul>
+
+      <a href="../index.html#contact" class="contactbtn">
+        <span class="contactbtn__text">Contactez moi</span>
+      </a>
+    </nav>
+
+    <section class="intro">
+      <div class="intro__container">
+        <h1 class="intro__container__title">Mes projets</h1>
+
+        <p>
+          Ici vous trouverez une grande partie de mes projets en temps que
+          développeur web. <br />
+          Réalisations professionnelles ou personnelles, ou encore projets de
+          formation, tout cela est disponible ci-dessous afin que vous puissiez
+          avoir un aperçu de mon travail.
+        </p>
+
+        <p>
+          D'autres réalisations seront affichées au fil du temps, de mes
+          prestations, et de mes avancées.<br />
+          Peut être que votre site web y sera répertioré, qui sait ?
+        </p>
+
+        <p>
+          Au passage, n'hésitez surtout pas à donner vos avis, ou vos conseils.
+          Il va sans dire que cela me fait avancer, et me permet ainsi de vous
+          proposer des prestations de qualité !
+        </p>
+      </div>
+
+      <img
+        src="../images/projects_collection.png"
+        alt="image de projets"
+        class="intro__projectsimg"
+      />
+
+      <img
+        src="../images/projects_banner.jpeg"
+        alt="fond d'écran affichant un clavier"
+        class="intro__img"
+      />
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio__container">
+        <div class="portfolio__fig portfolio__fig--right reveal" id="cod">
+          <img
+            src="../images/projects_cod.png"
+            alt="capture du site Cat of the day"
+            class="portfolio__fig__img"
+          />
+          <div class="portfolio__caption">
+            <div class="portfolio__caption__title">
+              <h2>CAT OF THE DAY</h2>
+              <i class="fa-solid fa-cat portfolioicon"></i>
+            </div>
+            <p class="portfolio__caption__subtitle">Projet personnel</p>
+
+            <div class="portfolio__caption__icons">
+              <i class="devicon-react-original colored techicons"></i>
+              <i class="devicon-tailwindcss-plain colored techicons"></i>
+            </div>
+
+            <p class="portfolio__caption__description">
+              Vous appréciez les félins ? Ce projet est fait pour vous !<br />
+              Via deux API il récupère et affiche aléatoirement des photos de
+              chats ainsi que des facts les concernants. Et cerise sur le
+              gâteau, un dark mode géré par React !
+            </p>
+
+            <div class="portfolio__caption__links">
+              <a href="https://catoftheday.netlify.app/"
+                ><i class="fas fa-external-link-alt portfoliolink"></i
+              ></a>
+              <a href="https://github.com/DrHyde01/CatOfTheDay-v2"
+                ><i class="fab fa-github-square portfoliolink"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="portfolio__fig portfolio__fig--left reveal"
+          id="groceryList"
+        >
+          <img
+            src="../images/projects_grocery.png"
+            alt="capture de l'applciation Grocery List"
+            class="portfolio__fig__img"
+          />
+          <div class="portfolio__caption">
+            <div class="portfolio__caption__title">
+              <h2>MY GROCERY LIST</h2>
+              <i class="fa-solid fa-bag-shopping portfolioicon"></i>
+            </div>
+            <p class="portfolio__caption__subtitle">Projet personnel</p>
+
+            <div class="portfolio__caption__icons">
+              <i class="devicon-react-original colored techicons"></i>
+              <i class="devicon-tailwindcss-plain colored techicons"></i>
+            </div>
+
+            <p class="portfolio__caption__description">
+              On a tous besoin d'une liste de courses simple et épurée, comme ce
+              petit bout de papier que l'on consulte régulièrement dans les
+              rayons d'un supermarché.<br />
+            </p>
+
+            <div class="portfolio__caption__links">
+              <a href="https://grocerylist-v2.netlify.app/"
+                ><i class="fas fa-external-link-alt portfoliolink"></i
+              ></a>
+              <a href="https://github.com/DrHyde01/GroceryList"
+                ><i class="fab fa-github-square portfoliolink"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__fig portfolio__fig--right reveal" id="reservia">
+          <img
+            src="../images/projects_reservia.png"
+            alt="capture du site Reservia"
+            class="portfolio__fig__img"
+          />
+          <div class="portfolio__caption">
+            <div class="portfolio__caption__title">
+              <h2>RESERVIA - REACT</h2>
+              <i class="fas fa-concierge-bell portfolioicon"></i>
+            </div>
+            <p class="portfolio__caption__subtitle">Projet personnel</p>
+
+            <div class="portfolio__caption__icons">
+              <i class="devicon-react-original colored techicons"></i>
+              <i class="devicon-tailwindcss-plain colored techicons"></i>
+            </div>
+
+            <p class="portfolio__caption__description">
+              Transformer une simple intégration HTML / CSS en React ? Pourquoi
+              pas ! <br />
+              A la base Reservia est un simple exercice de formation, demandant
+              d'intégrer une maquette de manière responsive. Ici j'ai voulu
+              recréer ce projet en employant mes nouvelles compétances.<br />
+              Et quel gain de temps que d'utiliser un framework ou une librairie
+              !
+            </p>
+
+            <div class="portfolio__caption__links">
+              <a href="https://new-reservia.netlify.app/"
+                ><i class="fas fa-external-link-alt portfoliolink"></i
+              ></a>
+              <a href="https://github.com/DrHyde01/Reservia-New"
+                ><i class="fab fa-github-square portfoliolink"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="portfolio__fig portfolio__fig--left reveal"
+          id="groupomania"
+        >
+          <img
+            src="../images/projects_groupomania.png"
+            alt="capture du site Groupomania"
+            class="portfolio__fig__img"
+          />
+          <div class="portfolio__caption">
+            <div class="portfolio__caption__title">
+              <h2>GROUPOMANIA</h2>
+              <i class="fas fa-users portfolioicon"></i>
+            </div>
+            <p class="portfolio__caption__subtitle">Projet d'études</p>
+
+            <div class="portfolio__caption__icons">
+              <i class="devicon-vuejs-plain colored techicons"></i>
+              <i class="devicon-tailwindcss-plain colored techicons"></i>
+              <i class="devicon-nodejs-plain colored techicons"></i>
+              <i class="devicon-express-original colored techicons"></i>
+              <i class="devicon-mysql-plain colored techicons"></i>
+            </div>
+
+            <p class="portfolio__caption__description">
+              Projet final de la formation Développeur web dispensée par
+              OpenClassrooms. Il s'agissait ici de créer une première version
+              d'un réseau social d'entreprise.<br />
+              Le but étant ici de mettre en place une application web complète
+              en utilisant un framework adapté en front, communiquant lui avec
+              un backend disposant d'une API Rest et d'une base de données
+              MySql.
+            </p>
+
+            <div class="portfolio__caption__links">
+              <!-- Site non déployé, mettre son lien une fois fait !-->
+              <a href="https://www.youtube.com/watch?v=Tc_2O1pLBRk"
+                ><i class="fab fa-youtube portfoliolink"></i
+              ></a>
+              <a href="https://github.com/DrHyde01/StephaneHeyd_7_03082021"
+                ><i class="fab fa-github-square portfoliolink"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__fig portfolio__fig--right reveal" id="orinoco">
+          <img
+            src="../images/projects_orinoco.png"
+            alt="capture du site orinoco"
+            class="portfolio__fig__img"
+          />
+          <div class="portfolio__caption">
+            <div class="portfolio__caption__title">
+              <h2>ORINOCO</h2>
+              <i class="fas fa-shopping-cart portfolioicon"></i>
+            </div>
+            <p class="portfolio__caption__subtitle">Projet d'études</p>
+
+            <div class="portfolio__caption__icons">
+              <i class="devicon-html5-plain-wordmark colored techicons"></i>
+              <i class="devicon-javascript-plain colored techicons"></i>
+              <i class="devicon-bootstrap-plain colored techicons"></i>
+            </div>
+
+            <p class="portfolio__caption__description">
+              Ma première rencontre avec JavaScript lors de ce projet d'études
+              !<br />
+              Celui-ci demandait de créer un site e-commerce à partir d'une API
+              existante. Récupérer les articles de cette dernière, les afficher,
+              mais aussi faire en sorte que l'utilisateur final puisse les
+              mettre dans un panier et passer sa commande. Un projet
+              enrichissant par bien des aspects.
+            </p>
+
+            <div class="portfolio__caption__links">
+              <a href="https://orinoco.stefanheyd.com/"
+                ><i class="fas fa-external-link-alt portfoliolink"></i
+              ></a>
+              <a href="https://github.com/DrHyde01/StephaneHeyd_5_04062021"
+                ><i class="fab fa-github-square portfoliolink"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__fig portfolio__fig--left reveal" id="ohmyfood">
+          <img
+            src="../images/projects_omf.png"
+            alt="capture du site OhMyFood"
+            class="portfolio__fig__img"
+          />
+          <div class="portfolio__caption">
+            <div class="portfolio__caption__title">
+              <h2>OH MY FOOD !</h2>
+              <i class="fas fa-utensils portfolioicon"></i>
+            </div>
+            <p class="portfolio__caption__subtitle">Projet d'études</p>
+
+            <div class="portfolio__caption__icons">
+              <i class="devicon-html5-plain-wordmark colored techicons"></i>
+              <i class="devicon-css3-plain-wordmark colored techicons"></i>
+              <i class="devicon-sass-original colored techicons"></i>
+            </div>
+
+            <p class="portfolio__caption__description">
+              Second projet issu de ma formation, et sans doute le plus plaisant
+              à mes yeux ! Il m'a permis de découvrir les fonctionnalités
+              avancées de CSS, celles qui permettent d'avoir davantage de
+              liberté dans la mise en page d'un site.<br />
+              Grâce à l'utilisation de SASS et de la méthodologie BEM la
+              structure du code a été rendue plus lisible, mieux organisée,
+              rendant le projet plus maintenable !
+            </p>
+
+            <div class="portfolio__caption__links">
+              <a href="https://ohmyfood.stefanheyd.com/"
+                ><i class="fas fa-external-link-alt portfoliolink"></i
+              ></a>
+              <a href="https://github.com/DrHyde01/StephaneHeyd_3_07042021"
+                ><i class="fab fa-github-square portfoliolink"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="portfolio__fig portfolio__fig--right reveal"
+          id="portfoliosite"
+        >
+          <img
+            src="../images/projects_portfolio.png"
+            alt="capture du site Portfolio"
+            class="portfolio__fig__img"
+          />
+          <div class="portfolio__caption">
+            <div class="portfolio__caption__title">
+              <h2>PORTFOLIO</h2>
+              <i class="fas fa-user-tie portfolioicon"></i>
+            </div>
+            <p class="portfolio__caption__subtitle">Projet personnel</p>
+
+            <div class="portfolio__caption__icons">
+              <i class="devicon-html5-plain-wordmark colored techicons"></i>
+              <i class="devicon-css3-plain-wordmark colored techicons"></i>
+              <i class="devicon-sass-original colored techicons"></i>
+              <i class="devicon-javascript-plain colored techicons"></i>
+            </div>
+
+            <p class="portfolio__caption__description">
+              Le site que vous êtes entrain de visiter, tout simplement 🙂 Un
+              condensé de ma personne, de mes compétences, de mes inspirations,
+              dans un site qui je l'espère vous est plaisant à consulter. Sachez
+              qu'il sera mis à jour en fonction de mes avancées dans ce
+              merveilleux métier !
+            </p>
+
+            <div class="portfolio__caption__links">
+              <a href="https://stefanheyd.com/"
+                ><i class="fas fa-external-link-alt portfoliolink"></i
+              ></a>
+              <a href="https://github.com/DrHyde01/portfolio"
+                ><i class="fab fa-github-square portfoliolink"></i><</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__text">
+        <p>
+          Êtes-vous tenté de voir votre futur site sur cette page ?<br />
+          Venez donc me <a href="../index.html#contact">contacter</a>, je suis
+          disponible pour toute demande concernant la mise en place d'un site ou
+          d'une application web ! 👋
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__topicon">
+        <a href="#">
+          <i class="fas fa-arrow-circle-up topicon"></i>
+        </a>
+      </div>
+
+      <div class="footer__social">
+        <a href="https://github.com/DrHyde01">
+          <i class="fab fa-github-square socialicon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/heyd-stephane/">
+          <i class="fab fa-linkedin socialicon"></i>
+        </a>
+
+        <a href="https://twitter.com/DrHyde01">
+          <i class="fab fa-twitter-square socialicon"></i>
+        </a>
+      </div>
+
+      <div class="footer__copyright">
+        <p>
+          © 2022 <span class="name">HEYD Stephane</span>. Tous droits réservés.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
