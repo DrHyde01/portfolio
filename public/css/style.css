@@ -1040,7 +1040,7 @@ strong {
 .skills__card {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: auto;
   padding: 30px;
   background-color: #181818;
   border-radius: 5px;

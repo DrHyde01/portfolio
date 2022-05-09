@@ -65,18 +65,19 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
   const serviceID = "OVH SMTP";
   const templateID = "template_9k3gt32";
-  const messageReturn =document.getElementById('returnmessage');
+  const messageReturn = document.getElementById("returnmessage");
 
   // send the email here
   emailjs.sendForm(serviceID, templateID, this).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
-      messageReturn.innerHTML = 'Votre message a bien été transmis, je vous répondrai dans les meilleurs délais 🙂'
+      messageReturn.innerHTML =
+        "Votre message a bien été transmis, je vous répondrai dans les meilleurs délais 🙂";
       document.getElementById("myForm").reset(); // Reset the form if succes
     },
     (error) => {
       console.log("FAILED...", error);
-      messageReturn.innerHTML = 'Oops, le message a pas pu être envoyé ⚠️'
+      messageReturn.innerHTML = "Oops, le message a pas pu être envoyé ⚠️";
     }
   );
 });

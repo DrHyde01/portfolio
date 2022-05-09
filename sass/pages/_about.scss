@@ -268,7 +268,7 @@
   &__card {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height:   auto;
     padding: $padding-lg;
     background-color: $darker-grey;
     border-radius: 5px;
