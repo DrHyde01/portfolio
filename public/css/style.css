@@ -1064,6 +1064,10 @@ li {
   margin-bottom: 1em;
   margin-top: 1em;
 }
+.skills__card li img {
+  height: 50px;
+  width: 50px;
+}
 .skills__bottom {
   display: flex;
   justify-content: center;
