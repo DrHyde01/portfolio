@@ -2,9 +2,6 @@
   0%, 100% {
     opacity: 0;
   }
-  25%, 75% {
-    opacity: 0, 5;
-  }
   50% {
     opacity: 1;
   }
@@ -125,24 +122,29 @@ a {
 
 p {
   font-weight: 300;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
+  line-height: 1.5;
 }
 
 h2 {
   font-size: 1.2em;
   font-weight: 500;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
 }
 
 h3 {
   font-size: 1em;
   font-weight: 500;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
 }
 
 strong {
   color: #00ffa6;
   font-weight: 400;
+}
+
+li {
+  line-height: 1.5;
 }
 
 .aboutitle__name {
@@ -171,20 +173,20 @@ strong {
 .intro__container__title {
   font-size: 2em;
   font-weight: 400;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
 }
 @media screen and (max-width: 749px) {
   .aboutitle__title,
-.presentation__container__title,
-.intro__container__title {
+  .presentation__container__title,
+  .intro__container__title {
     font-size: 1.8em;
     font-weight: 300;
   }
 }
 @media screen and (min-width: 749px) and (max-width: 1024px) {
   .aboutitle__title,
-.presentation__container__title,
-.intro__container__title {
+  .presentation__container__title,
+  .intro__container__title {
     font-size: 1.6em;
     font-weight: 300;
   }
@@ -371,7 +373,7 @@ strong {
 .projectsicon {
   font-size: 1.3em;
   display: block;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
 }
 
 .topicon {
@@ -397,7 +399,7 @@ strong {
 .sercivestitleicon {
   font-size: 1.5em;
   margin-left: 0.5em;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
 }
 
 .skillicon {
@@ -844,9 +846,6 @@ strong {
   left: 0;
   bottom: 0;
 }
-.presentation__container p {
-  line-height: 1.5;
-}
 .presentation__portrait {
   position: absolute;
   right: 0%;
@@ -991,7 +990,7 @@ strong {
   border-left: solid 2px #00ffa6;
 }
 .resume__card li {
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
   margin-bottom: 1em;
   margin-top: 1em;
 }
@@ -1061,7 +1060,7 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
   margin-bottom: 1em;
   margin-top: 1em;
 }
@@ -1220,9 +1219,6 @@ strong {
   background-color: #00ffa6;
   left: 0;
   bottom: 0;
-}
-.intro__container p {
-  line-height: 1.5;
 }
 .intro__icon {
   position: absolute;
@@ -1387,9 +1383,6 @@ strong {
     position: initial;
   }
 }
-.services__card p {
-  line-height: 1.5;
-}
 
 .navbar {
   position: sticky;
@@ -1492,7 +1485,7 @@ strong {
   }
   .navbar__menu__contact:hover {
     background-color: #00f09c;
-    color: #f1f1f1;
+    color: rgb(241, 241, 241);
   }
 }
 .navbar__hamburger {
@@ -1508,7 +1501,7 @@ strong {
     width: 25px;
     height: 2px;
     margin: 8px auto;
-    background-color: #f1f1f1;
+    background-color: rgb(241, 241, 241);
     transition: all 0.5s ease-in-out;
   }
   .navbar__hamburger.active :nth-child(2) {
@@ -1656,7 +1649,7 @@ strong {
   }
 }
 .projects__fig__caption h3 {
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
 }
 .projects__fig__caption p {
   font-weight: 200;
@@ -1841,7 +1834,7 @@ strong {
   margin-bottom: 30px;
   padding: 10px;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: rgb(241, 241, 241);
   border-radius: 5px;
   font-family: "Montserrat", arial, sans-serif;
   font-size: 1em;
@@ -1858,7 +1851,7 @@ strong {
 }
 .formcontain #returnmessage {
   padding: 30px;
-  color: #f1f1f1;
+  color: rgb(241, 241, 241);
   text-align: center;
 }
 
@@ -1914,7 +1907,6 @@ strong {
 }
 .contact__text p {
   text-align: center;
-  line-height: 1.5;
 }
 .contact__text p a {
   font-weight: 600;
